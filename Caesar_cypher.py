@@ -5,8 +5,8 @@ def encrypt():
     b=b.strip()
     b=b.replace(" ","")
     c=""
-    for i in range(0,len(b)+1):
-        temp=ord(b[i-1])
+    for i in range(0,len(b)):
+        temp=ord(b[i])
         temp=temp+3
         c=c+chr(temp) 
 
@@ -14,12 +14,13 @@ def encrypt():
 
 def decrypt(b): 
     c=""
-    for i in range(0,len(b)+1):
-        temp=ord(b[i-1])
+    for i in range(0,len(b)):
+        temp=ord(b[i])
         temp=temp-3
         
         c=c+chr(temp) 
     return c
 
 a=encrypt()
+print(a)
 print(decrypt(a))
