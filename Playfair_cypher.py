@@ -32,16 +32,8 @@ def encrypt():
         else: 
             pass
 
-
-
         print(temp)
         print(temp1)
-
-    
-
-
-    
-
 
 def makekeymatrix(key): 
     for i in range(0,len(key)): 
@@ -62,12 +54,6 @@ def makekeymatrix(key):
     reshaped_array = linear_array.reshape(5, 5)
 
     return reshaped_array
-
-
-
-
-
-
 
 encrypt()
 
