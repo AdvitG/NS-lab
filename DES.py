@@ -7,7 +7,6 @@ def generatekey():
     B=B[10]
     A = np.delete(B, [7,15], 1)
     B=np.split(A, 2, axis=1)
-    print(B)
     return B
 
 
@@ -24,7 +23,7 @@ def take_input():
 def encrypt():
     LK=key[0]
     RK=key[1]
-    print(LK)
+
     plaintext=take_input()
     for i in range(0,len(plaintext),8): 
         a=plaintext[i:i+8]
@@ -39,8 +38,10 @@ def encrypt():
         BL=C[0]
         BR=C[1]
         
-    
-    
+        #starting of rounds for that block
+        for j in range(1,17):
+            print("round: "+j) 
+            
 
 
 
